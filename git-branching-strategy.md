@@ -57,18 +57,25 @@ gitGraph
     checkout main
     merge hotfix/fix-gateway tag: "10.7.1"
 ```
+```mermaid
+gitGraph
+    commit
+    branch techdebt/remove-mongodb
+    checkout techdebt/remove-mongodb
+    commit id: "Remove MongoDB"
+    checkout main
+    merge techdebt/remove-mongodb tag: "10.7.2"
+```
 
-
-
-## Environment branches (disadvantages)
+### Environment branches (disadvantages)
 * By having a branch dedicated for all development work defeats the purpose of continuous delivery
-* Forget get take dev or qa to production - so you have functionality that is not in production
-* Environment specific code, configureation and other drift
+* You can forget to take dev or qa to production - so you have functionality that is not in production
+* Environment specific code, configuration and other drift
 
 ### Need the following
 * Less intermediate environments
   * Less environments encourages team to use shared environment optimally
-* Remove branches for environments
+* Remove environment specific branches
   * By avoiding branches for environments we focus on production and moving new features forward.
 * Create JIRA tickets as deployable units 
 
@@ -78,6 +85,8 @@ gitGraph
 * Need to continue to merge/rebase from master and make sure envs are up-to-date
 * If the team is overwhelmed with testing there is not enough automation
 * Automation is key to continuous delivery
+
+## Flow Diagrams
 
 ```mermaid
 ---
@@ -98,12 +107,8 @@ title: "Ideal Future Branching and Environment Strategy"
 flowchart LR
     A[ReleaseBranch]
     A --> B[TestingEnv]
-    A --> C[Prod]
-%%    A --> D[TestingEnv]
-%%    A --> E[TestingEnv]
-%%    E --> F[Prod]
-%%    D --> F
-%%    C --> F
+    A -- TestingEnv Pass --> C[Prod]
+    
 ```
 
 -----
