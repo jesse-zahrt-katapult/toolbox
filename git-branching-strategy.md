@@ -86,6 +86,14 @@ gitGraph
 * If the team is overwhelmed with testing there is not enough automation
 * Automation is key to continuous delivery
 
+### Branch Names
+* Need to follow release, techdebt, hotfix for the following reasons:
+  * Metrics and analytics on allocation in Swarmia
+  * CI pipeline will only build code on certain branch names
+  * GitHub branch rules enforced by name
+* Need to put link to JIRA ticket in the GitHub PR.
+  * Allows JIRA and GitHub integration to work
+
 ## Flow Diagrams
 
 ```mermaid
@@ -112,4 +120,4 @@ flowchart LR
 ```
 
 -----
-Influenced by current experience and observation. A lot of references and agreement with the [following article](https://sairamkrish.medium.com/git-branching-strategy-for-true-continuous-delivery-eade4435b57e)
+Influenced by current experience and observation at Katapult. A lot of references and agreement with the [following article](https://sairamkrish.medium.com/git-branching-strategy-for-true-continuous-delivery-eade4435b57e)
