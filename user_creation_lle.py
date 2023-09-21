@@ -87,4 +87,4 @@ def create_admin_user(username, password, email, force_update=True):
     user.save()
 
 
-# create_retailer_admin_user("NewRetailerAdmin", "@Ka2423413579#", "jesse.zahrt@katapult.com", 10)
+create_admin_user("yulia.povarova", "Katapult1234!", "yulia.povarova@katapult.com")

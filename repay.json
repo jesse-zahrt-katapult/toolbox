@@ -1,0 +1,107 @@
+{
+  "links": [
+    {
+      "href": "https://api.repayonline.com/rgapi/v1.0/transactions/card/279308591",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.repayonline.com/rgapi/v1.0/transactions/card/279308591/emailreceipt",
+      "rel": "emailReceipt",
+      "method": "POST"
+    },
+    {
+      "href": "https://api.repayonline.com/rgapi/v1.0/transactions/card/279308591/void",
+      "rel": "void",
+      "method": "POST"
+    },
+    {
+      "href": "https://api.repayonline.com/rgapi/v1.0/transactions/card/279308591/rebill",
+      "rel": "rebill",
+      "method": "POST"
+    },
+    {
+      "href": "https://api.repayonline.com/rgapi/v1.0/transactions/card/279308591/reversal",
+      "rel": "reverse",
+      "method": "POST"
+    }
+  ],
+  "entry_method": "Keyed",
+  "requested_auth_amount": 45.0,
+  "auth_amount": 45.0,
+  "total_amount": 45.0,
+  "tip_amount": 0.0,
+  "convenience_amount": null,
+  "surcharge": null,
+  "custom_fields": [],
+  "itr_card_retries": [],
+  "manual": true,
+  "enhanced_data_validation_result": null,
+  "authentication_data_result": null,
+  "transaction_id": 279308591,
+  "merchant_id": 536885144,
+  "merchant_name": "Katapult",
+  "customer_id": "13359546",
+  "invoice_id": "13359546F001",
+  "date": "2023-05-15T18:51:49.3420729Z",
+  "payment_type_id": "VISA",
+  "card_bin": "423223",
+  "last4": "9602",
+  "name_on_card": "Casey Doane",
+  "trans_type_id": "Sale",
+  "response_message": {
+    "description": null,
+    "details": null
+  },
+  "approval_code": "043629",
+  "user_name": "wxoa5041",
+  "register_number": null,
+  "trx_status": "Open",
+  "last_batch_number": "941",
+  "batch_number": null,
+  "batch_id": null,
+  "result": "0",
+  "result_text": "Approved",
+  "result_details": {
+    "authorization_reversed": false,
+    "delayed_in_reporting": false,
+    "card_info": {
+      "country": null,
+      "bank_name": "",
+      "brand": "VISA",
+      "category": null,
+      "type": "DEBIT"
+    }
+  },
+  "voided": false,
+  "reversed": false,
+  "host_ref_num": "463135679099741",
+  "avs_response": "Street address and 5-digi",
+  "avs_response_code": "Y",
+  "cv_response": "CVV2 match.",
+  "cv_response_code": "M",
+  "settle_flag": "0",
+  "po_num": null,
+  "card_token": "316229081",
+  "card_token_nickname": null,
+  "orig_transaction_id": null,
+  "processor_profile_key": 536875801,
+  "processor_profile_description": null,
+  "retry_count": 0,
+  "currency_id": "840",
+  "pos_entry_mode": null,
+  "fallback": null,
+  "auth_method": null,
+  "store_and_forward": null,
+  "terminal_id": null,
+  "terminal_number": null,
+  "street": "157 Eddy Drive",
+  "zip": "48723",
+  "regional_network": "",
+  "disbursement_network_id": null,
+  "debit_network": null,
+  "integrator_request_id": null,
+  "processor_id": "TSYS",
+  "exp_date": "0126",
+  "succeed": true
+}

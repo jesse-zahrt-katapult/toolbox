@@ -1,0 +1,65 @@
+{
+  "paym_request": {
+    "trace_id": "13293321N005",
+    "launch_tag": "CCGQQUGFABAH",
+    "app_id": 13293321,
+    "transaction_type": "Purchase",
+    "transaction_reason": "NewCard",
+    "invoice_id": "13293321N005",
+    "past_invoice_id": null,
+    "source_system": "CUSTOMER_PORTAL",
+    "request_user_id": null,
+    "payment_token": "312884252",
+    "request_time": "2023-05-08 10:23:15.800613",
+    "gateway_name": "repay",
+    "amount": 50,
+    "last4": "1013",
+    "bin": 378751,
+    "customer_info": {
+      "customer_id": "312834",
+      "first_name": "Fallon",
+      "last_name": "Mcneill",
+      "address_line_1": "4534 genoa circle",
+      "city": "virginia beach",
+      "state": "VA",
+      "zip": "23462",
+      "phone": null,
+      "email": null
+    },
+    "payment_type_info": {
+      "payment_type": "CC",
+      "exp_date": "2023-03-01 00:00:00.000000",
+      "card_type": "Amex",
+      "how_was_info_collected": "NotApplicable"
+    },
+    "retailer_info": {
+      "retailer_id": 1,
+      "retailer_dba": "KTLPT-Cognical Test",
+      "callback_phone_number": "8334494229"
+    }
+  },
+  "paym_response": {
+    "launch_tag": "CCGQQUGFABAH",
+    "app_id": 13293321,
+    "amount": 50,
+    "invoice_id": "13293321N005",
+    "past_invoice_id": null,
+    "gateway_transaction_id_1": "261183",
+    "gateway_transaction_id_2": "276017092",
+    "gateway_transaction_id_3": "",
+    "approved": true,
+    "gateway_name": "repay",
+    "gateway_response_code": "0",
+    "normalized_result_code": "Approved",
+    "result_time": "2023-05-08 10:23:18.940564",
+    "entry_reason": "ProcessorResult",
+    "raw_result_text": null,
+    "payment_validation_info": {
+      "avs_zip": "Match",
+      "avs_address": "Match",
+      "avs_international": "NonMatch",
+      "avs_name": "NotSupported",
+      "cvv_result": "Match"
+    }
+  }
+}
